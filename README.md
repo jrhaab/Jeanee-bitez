@@ -3,12 +3,12 @@ A PWA snack app where users are allowed to order a variety of Jeanee diary produ
 Link to Figma Design : [visitor elementor](https://www.figma.com/design/DjmDX1140Ls5gaHqDRSwUd/Jeanee-Project?node-id=139-216&t=Ofg6Lcbzg3i0Awj4-1)
 
 
-Globals :
+#Globals :
     Stylesheet: global.css
     Header: header.html
     Footer: footer.html
 
-Project structure:
+##Project structure:
     index.html -> This is the entry file
     /styles -> This contains all stylesheets
     /scripts -> This contains all scripts
