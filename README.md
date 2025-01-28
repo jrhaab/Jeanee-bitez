@@ -9,7 +9,8 @@ Link to Figma Design : [visitor elementor](https://www.figma.com/design/DjmDX114
     Footer: footer.html
 
 ##Project structure:
-    index.html -> This is the entry file
+   /Pages -> This is the entry files
+   /components -> This contains default elements or bottoms 
     /styles -> This contains all stylesheets
     /scripts -> This contains all scripts
     /assets -> This contains all media and non-media assets
