@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Addprofilephoto() {
     return (
-        <main className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`} >
+        <main className={`flex min-h-screen flex-col items-center justify-center p-24 ${inter.className}`} >
              
              
               <span>Upload your profile photo</span> 
@@ -13,13 +13,11 @@ export default function Addprofilephoto() {
 
               </small>
 
-              
-             
               <div className="flex flex-col justify-start">
                 
-                <button className="bg-slate-300 rounded-3xl h-20 w-80 ml-7 text-black ">
+                <button className="bg-slate-300 rounded-3xl h-20 w-80  text-black ">
                     <span>take photo</span></button> <br />
-                <button className="bg-slate-300 rounded-3xl h-20 w-80 ml-7 text-black "><span>From gallery</span></button> <br />
+                <button className="bg-slate-300 rounded-3xl h-20 w-80  text-black "><span>From gallery</span></button> <br />
                
                 </div>
                 <button type="button" className="bg-red-800 justify-center mt-12 rounded-3xl text-white flex items-center h-10 w-52 ml-8"> Next</button>

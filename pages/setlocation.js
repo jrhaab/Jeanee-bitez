@@ -5,11 +5,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Setlocation() {
     return (
-        <main className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`} >
+        <main className={`flex min-h-screen flex-col items-center justify-between  p-24 ${inter.className}`} >
              
              
               <span>Set location</span> 
-              <small className="">This data will be displayed in your profile for <br />security
+              <small className="">This data will be displayed in your profile for security
 
               </small>
               <div className="flex flex-col justify-start">
