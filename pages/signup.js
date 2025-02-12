@@ -22,7 +22,7 @@ export default function Signup() {
         <input
           type="text"
           placeholder="email or phone number"
-          className="bg-slate-300 rounded-md h-8 w-80 pl-10"
+          className="bg-slate-300 rounded-md h-8 w-52 pl-10"
         />
         <br /> <br />
         <label for="password">Password:</label> <br />
@@ -30,7 +30,7 @@ export default function Signup() {
           <input
             type="text"
             placeholder="password"
-            className="bg-slate-300 rounded-md h-8 w-80 pl-10"
+            className="bg-slate-300 rounded-md h-8 w-52 pl-10"
           /> 
         </button>{" "}
         <br /> <br />
@@ -38,17 +38,15 @@ export default function Signup() {
         <br /> 
         <button
           type="submit"
-          className="bg-red-800 justify-center rounded-3xl text-white flex items-center h-10 w-80  "
+          className="bg-red-800 justify-center rounded-3xl text-white flex items-center h-10 w-52  "
         >
           Sign up
         </button>{" "}
         <br />
         <span className="flex justify-center">or continue with</span>
       </form> <br />
-      <div className="flex flex-row gap-7 justify-center">
-        <button className=" bg-slate-300 justify-center rounded-md text-black flex items-center h-8 w-36">
-          Facebook
-        </button>
+      <div className="flex flex-row  justify-center">
+        
         <button className=" bg-slate-300 justify-center rounded-md text-black flex items-center h-8 w-36">
           Google
         </button>

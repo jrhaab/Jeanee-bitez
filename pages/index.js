@@ -10,8 +10,8 @@ export default function Landingpage() {
     >
    
      <Image src={"https://res.cloudinary.com/dfdy55ndo/image/upload/v1735923906/jeanee-transparent-logo_wz8kzv.png"} alt="" width={90} height={90} />
-     <span className="mb-40">The best diary ordering and delivery app of <br /> the century </span> <br />
-     <button className=" bg-red-800 justify-center ml-1 rounded-2xl h-10 text-white flex items-center w-80">Next</button>
+     <span className="mb-40">The best diary ordering and delivery app of the century </span> <br />
+     <button className=" bg-red-800 justify-center ml-1 rounded-2xl h-10 text-white flex items-center w-52">Next</button>
 
     </main>
   );

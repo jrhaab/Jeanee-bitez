@@ -13,15 +13,15 @@ export default function Login() {
                 <label for ="email-address" >Email:</label> <br />
                 
                 
-                <input type="text" placeholder="email or phone number" className="bg-slate-300 rounded-md h-8 w-80 pl-10" /> 
+                <input type="text" placeholder="email or phone number" className="bg-slate-300 rounded-md h-8 w-52 pl-10" /> 
 
                 <br />
                 <label for="password">Password:</label> <br />
                 <button>
-                <input type="text" placeholder="password" className="bg-slate-300 rounded-md h-8 w-80 pl-10"/>
+                <input type="text" placeholder="password" className="bg-slate-300 rounded-md h-8 w-52 pl-10"/>
                 </button> <br /> <br /><span> Remind me</span>
                  <br />
-                <button type="submit" className="bg-red-800 justify-center rounded-3xl text-white flex items-center h-10 w-80  " >Login</button> <br />
+                <button type="submit" className="bg-red-800 justify-center rounded-3xl text-white flex items-center h-10 w-52  " >Login</button> <br />
                 <div>
                 <div className="flex justify-center items-center">
               <span >Forgot the password?</span> 
