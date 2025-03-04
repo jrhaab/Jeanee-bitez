@@ -9,7 +9,7 @@ export default function Editprofilephoto() {
              
              
               <span>Upload your profile photo</span> 
-              <small>This data will be displayed in your profile for <br />security
+              <small>This data will be displayed in your profile for security
 
               </small>
 

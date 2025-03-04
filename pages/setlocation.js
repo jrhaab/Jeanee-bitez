@@ -13,12 +13,12 @@ export default function Setlocation() {
 
               </small>
               <div className="flex flex-col justify-start">
-                <button className="bg-slate-300 rounded-2xl h-20 w-52 ml-7 mb-12">
+                <button className="bg-slate-300 rounded-2xl h-20 w-52  mb-12">
                 <span>set location </span></button> <br />
                 </div>
                
                 
-                <button type="button" className="bg-red-800 justify-center mt-28 rounded-3xl text-white flex items-center h-10 w-52 ml-8"> Next</button>
+                <button type="button" className="bg-red-800 justify-center mt-28 rounded-3xl text-white flex items-center h-10 w-52 "> Next</button>
              
         </main>
     )

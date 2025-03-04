@@ -12,11 +12,11 @@ export default function Maplocation() {
     >
       <span>Set location</span>
       <small className="">
-        This data will be displayed in your profile for <br />
+        This data will be displayed in your profile for 
         security
       </small>
 
-      <div className="flex items-center justify-center h-52 w-52 rounded-2xl bg-slate-100 ml-7">
+      <div className="flex items-center justify-center h-52 w-52 rounded-2xl bg-slate-100 ">
         <Image
           src={
             "https://res.cloudinary.com/dfdy55ndo/image/upload/v1735923906/jeanee-transparent-logo_wz8kzv.png"
@@ -27,7 +27,7 @@ export default function Maplocation() {
         />
       </div>
       <br />
-      <button className="bg-slate-300 rounded-2xl h-20 w-52 ml-7 ">
+      <button className="bg-slate-300 rounded-2xl h-20 w-52  ">
         <MdLocalCafe className="text-brown-600 animate-bounce" />
         <small className="flex items-start justify-items-start  ml-8">
           
@@ -41,7 +41,7 @@ export default function Maplocation() {
 
       <br />
 
-      <button type="button" className="bg-red-800 justify-center  rounded-3xl text-white flex items-center h-10 w-52 ml-8">Set location</button>
+      <button type="button" className="bg-red-800 justify-center  rounded-3xl text-white flex items-center h-10 w-52 ">Set location</button>
     </main>
   );
 }

@@ -10,17 +10,17 @@ export default function Paymentmethod() {
              
               <span>Payment Method </span> 
               
-              <small className="place-items-center ">* This data will be displayed in your profile for <br /> security</small>
+              <small className="place-items-center ">* This data will be displayed in your profile for security</small>
 
               
              
               <div className="flex flex-col justify-start">
                 
-                <button className="bg-slate-300 rounded-2xl h-12 w-80 ml-7 text-black ">Telecel</button> <br />
-                <button className="bg-slate-300 rounded-2xl h-12 w-80 ml-7 text-black ">AirtelTigo</button> <br />
-                <button className="bg-slate-300 rounded-2xl h-12 w-80 ml-7 text-black ">MTN</button> <br />
+                <button className="bg-slate-300 rounded-2xl h-12 w-80  text-black ">Telecel</button> <br />
+                <button className="bg-slate-300 rounded-2xl h-12 w-80  text-black ">AirtelTigo</button> <br />
+                <button className="bg-slate-300 rounded-2xl h-12 w-80  text-black ">MTN</button> <br />
                 </div>
-                <button type="button" className="bg-red-800 justify-center rounded-3xl mt-12 text-white flex items-center h-10 w-80 ml-8"> Next</button>
+                <button type="button" className="bg-red-800 justify-center rounded-3xl mt-12 text-white flex items-center h-10 w-80 "> Next</button>
              
         </main>
     )
