@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,35 +15,36 @@
   --danger: #db0000;
   --success: #009d61;
 
-  --primary-font-family: "Open Sans", serif;
-  --secondary-font-family: "Poppins", serif;
+  --primary-red-color: #4b0004;
+  --secondary-red-color: #a10302;
+  font-family: "Roboto Condensed", sans-serif;
+
+  --primary-font-family: "Roboto Condensed", sans-serif;
+  --secondary-font-family: "Lato", sans-serif;
 
   /* trademark specific colors */
   --trademark-color-dirt-gold: #bd0006;
-  
---font-xs: 0.75rem;
---font-sm: 0.85rem;
---font-md: 0.95rem;
---font-normal: 1rem;
---font-xlg: 1.25rem;
---heading-1: 1.3rem;
---heading-2: 1.563rem;
---heading-3: 1.953rem;
---heading-4: 2.441rem;
---heading-5: 3.052rem;
 
---letter-spacing: 0.45rem;
---letter-spacing-i: 0.65rem;
+  --font-xs: 0.75rem;
+  --font-sm: 0.85rem;
+  --font-md: 0.95rem;
+  --font-normal: 1rem;
+  --font-xlg: 1.25rem;
+  --heading-1: 1.3rem;
+  --heading-2: 1.563rem;
+  --heading-3: 1.953rem;
+  --heading-4: 2.441rem;
+  --heading-5: 3.052rem;
 
---body-global-padding: 2rem;
+  --letter-spacing: 0.45rem;
+  --letter-spacing-i: 0.65rem;
 
---radius-min: 1rem;
---radius-md: 1rem;
---radius-full: 99px;
+  --body-global-padding: 2rem;
+
+  --radius-min: 1rem;
+  --radius-md: 1rem;
+  --radius-full: 99px;
 }
-
-
-
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -53,26 +55,25 @@
 }
 
 * {
-transition: 0.35s;
-scroll-behavior: smooth;
-font-family: var(--primary-font-family);
+  transition: 0.35s;
+  scroll-behavior: smooth;
+  font-family: var(--primary-font-family);
 }
 
 html,
 body {
-padding: 0;
-margin: 0;
-font-optical-sizing: auto;
-scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-optical-sizing: auto;
+  scroll-behavior: smooth;
 }
-
-
 
 body {
   width: 100vw;
   height: 100vh;
   font-family: var(--primary-font-family);
 }
+
 .header-logo {
   width: 2.5rem;
   height: 2.5rem;
@@ -106,55 +107,58 @@ a:hover {
     .col-all-centered {
       @apply flex flex-col justify-center items-center;
     }
-  
+
     .col-items-centered {
       @apply flex flex-col justify-start items-center;
     }
-  
+    .col-all-centered {
+      @apply flex flex-col items-center justify-center;
+    }
+
     .col-items-start {
       @apply flex flex-col justify-center items-start;
     }
-  
+
     .col-content-center {
       @apply flex flex-col justify-center items-start;
     }
-  
+
     .col-all-start {
       @apply flex flex-col justify-start items-start;
     }
-  
+
     .col-all-end {
       @apply flex flex-col justify-end items-start;
     }
-  
+
     .row-all-centered {
       @apply flex flex-row justify-center items-center;
     }
-  
+
     .row-items-centered {
       @apply flex flex-row justify-start items-center;
     }
-  
+
     .row-items-start {
       @apply flex flex-row justify-center items-start;
     }
-  
+
     .row-content-end {
       @apply flex flex-row justify-end items-center;
     }
-  
+
     .row-content-between {
       @apply flex flex-row justify-between items-center;
     }
-  
+
     .row-content-center {
       @apply flex flex-row justify-center items-start;
     }
-  
+
     .row-all-start {
       @apply flex flex-row justify-start items-start;
     }
-  
+
     .grid-2-cols {
       @apply grid grid-cols-2 w-full gap-x-6;
     }
@@ -165,9 +169,8 @@ a:hover {
       @apply grid grid-cols-4 w-full gap-x-6;
     }
   }
-  
-  }
-  
+}
+
 /*buttons and links*/
 .global-link {
   width: max-content;
@@ -209,5 +212,31 @@ a:hover {
 }
 /* buttons */
 
+main {
+  width: 1024px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  padding: 1rem 0rem;
+  overflow-y: auto;
+}
 
-
+@media only screen and (max-width: 768px) {
+  main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    padding: 1rem 0rem;
+    background-size: cover;
+    overflow-y: auto;
+  }
+}
