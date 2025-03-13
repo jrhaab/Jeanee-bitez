@@ -5,19 +5,21 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function OTPcode() {
     return(
-        <main  className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className} `}> 
-            
-            <h3>Forgot password</h3> 
-            <span>Enter 4-digits PIN code we sent to your number +233****001</span> 
-            <div className="w-60 flex flex-row items-center justify-center gap-6 mb-20">
+        <main  className={`bg-[url('/bg/jenee-auth-bg.png')] bg-no-repeat bg-cover bg-center flex flex-col gap-6  pb-0`}> 
+            <section className="w-full h-80 bg-white opacity-95 flex flex-col justify-center items-center gap-8">
+            <h3 className="text-2xl font-bold">Forgot password</h3> 
+            <span className="font-medium text-base text-center w-full">Enter 4-digits PIN code we sent to your number +233****001</span> 
+            <div className="h-max w-full flex flex-row items-center justify-center gap-6 ">
             <input type="text" placeholder="1"className="bg-slate-300 rounded-2xl h-10 w-10 " /> 
             <input type="text" placeholder="2"className="bg-slate-300 rounded-2xl h-10 w-10 " /> 
             <input type="text" placeholder="3"className="bg-slate-300 rounded-2xl h-10 w-10" /> 
             <input type="text" placeholder="4"className="bg-slate-300 rounded-2xl h-10 w-10 " /> 
             </div>
             <span>Resend code in 56 s</span>
+            </section>
+           
 
-            <button type="button" className="bg-red-800 justify-center rounded-3xl text-white flex items-center h-10 w-52"> Submit</button>
+            <button type="button" className="bg-[var(--secondary-red-color)] rounded-[var(--radius-full)] text-white text-2xl font-bold tracking-[0.05rem] flex flex-col items-center justify-center px-4 py-3 w-full"> Submit</button>
 
             
            
