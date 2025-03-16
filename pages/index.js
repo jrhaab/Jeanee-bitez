@@ -9,7 +9,7 @@ export default function Landingpage() {
     <main
       className={`bg-[url('/bg/pexels-yuuilina-10254480.jpg')] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-end pb-0`}
     >
-      <section className="w-full h-max rounded-t-[var(--radius-md)] bg-white opacity-95 flex flex-col items-center justify-center gap-y-16 px-10 py-10">
+      <section className="w-full h-max rounded-t-[var(--radius-md)] bg-white opacity-95 flex flex-col items-center justify-center shadow-lg gap-y-16 px-10 py-10">
         <Image
           src={"/trademarks/jeanee-transparent-logo_wz8kzv.png"}
           alt=""

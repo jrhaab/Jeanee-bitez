@@ -6,18 +6,18 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Resetsuccessful() {
   return (
     <main
-      className={`flex min-h-screen flex-col  items-center justify-between p-24 ${inter.className}`}
+      className={`bg-[url('/bg/jenee-auth-bg.png')] bg-no-repeat bg-cover bg-center flex flex-col gap-6 px-3 pb-0`}
     >
-        <div className="items-center justify-center mt-36"> 
-        <FaHamburger className="text-red-500 animate-bounce ml-14" />
-      <h1 className="ml-6">Congrats!</h1>
-      <small>Reset was successful</small></div>
+        <section className="w-full h-max rounded-[var(--radius-md)] bg-white opacity-95 flex flex-col items-center justify-center px-3 gap-8 shadow-lg"> 
+        <FaHamburger className="text-red-500 animate-bounce" />
+      <h1 className="text-2xl font-bold">Congrats!</h1>
+      <span className="font-medium text-base text-center w-full">Reset successful</span></section>
      
 
       <button
         type="button"
-        className="bg-red-800 justify-center mt-10 rounded-3xl text-white flex items-center h-10 w-52 "
-      >
+        className="bg-red-800 justify-center  rounded-3xl text-white font-bold flex items-center h-10 w-full"
+      > 
        Ok
       </button>
     </main>
