@@ -13,7 +13,6 @@ const SnackIcons = () => {
        
        <span className="font-extrabold text-base item-start w-full"> Popular yoghurt flavors </span>
       <section className="w-full h-max rounded-[var(--radius-md)] bg-white opacity-95 flex flex-col items-center justify-center shadow-lg px-3 py-6 gap-4">
-     
 
       <div className="flex w-full text-1xl h-max flex-col items-center justify-center gap-6  ">
 

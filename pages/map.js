@@ -1,3 +1,4 @@
+import { Button, Heading, Paragraph, Section } from "@/components/globals/Elements/typography";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import { FaHamburger } from "react-icons/fa"; // FontAwesome icons
@@ -9,12 +10,9 @@ export default function Maplocation() {
   return (
     <main
       className={`bg-[url('/bg/jenee-auth-bg.png')] bg-no-repeat bg-cover bg-center flex flex-col w-full gap-6 px-3 pb-0`}>
-      <span>Set location</span>
-      <span className="font-medium text-base text-center w-full">
-        This data will be displayed in your profile for 
-        security
-      </span> 
-<section className="w-full h-96 rounded-t-[var(--radius-md)] bg-white opacity-95 flex flex-col items-center justify-center px-3 shadow-lg gap-8">
+      <Heading type={"h3"} content={"Set location"}/>
+  <Paragraph content={"This data will be displayed in your profile for security"}/>     
+<Section >
 <div className="flex items-center justify-center h-52 w-full rounded-2xl bg-slate-100 ">
         <Image
           src={
@@ -35,11 +33,11 @@ export default function Maplocation() {
         <FaHamburger className="text-red-500 animate-bounce" />
       </button>
 
-</section>
+</Section>
      
      
 
-      <button type="button" className="bg-red-800 justify-center  rounded-3xl text-white font-bold flex items-center h-10 w-full ">Set location</button>
+      <Button type="submit" content={"Set Location"}/>
     </main>
   );
 }
