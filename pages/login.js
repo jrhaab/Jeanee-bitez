@@ -1,4 +1,6 @@
-import { Button, Heading, InputInstance, Paragraph, Section } from "@/components/globals/Elements/typography";
+import {  Heading, Paragraph, Section} from "@/components/globals/Elements/typography";
+import {Button} from "@/components/globals/Elements/buttons";
+import { InputInstance} from "@/components/globals/Elements/inputs";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";

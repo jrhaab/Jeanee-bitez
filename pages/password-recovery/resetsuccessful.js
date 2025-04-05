@@ -1,4 +1,5 @@
-import { Button, Heading, Paragraph, Section } from "@/components/globals/Elements/typography";
+import {  Heading, Paragraph, Section } from "@/components/globals/Elements/typography";
+import {Button} from "@/components/globals/Elements/buttons";
 import { Inter } from "next/font/google";
 import { FaHamburger } from "react-icons/fa"; // FontAwesome icons
 

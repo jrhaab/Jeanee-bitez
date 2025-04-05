@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { Button, Paragraph } from "@/components/globals/Elements/typography";
+import { Paragraph } from "@/components/globals/Elements/typography";
+import {Button} from "@/components/globals/Elements/buttons";
 
-const inter = Inter({ subsets: ["latin"] });
+const Inter = Inter({ subsets: ["latin"] });
 
 export default function Authchoice() {
   return (
@@ -20,7 +21,7 @@ export default function Authchoice() {
         /> 
         <Paragraph content={"Login or Sign Up to get the most out of Jeanee."} />
         <div className="flex flex-col justify-center items-center gap-y-4 w-full">
-          <Button type={"submit"} content={"Sign up"} ></Button>
+          <Button type={"submit"} content={"Sign up"} />
           <button className="bg-[var(--primary-red-color)] rounded-[var(--radius-full)] text-white text-2xl font-bold tracking-[0.05rem] flex flex-col items-center justify-center px-4 py-3 w-full">
             Login
           </button>

@@ -1,8 +1,10 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { Button, Heading, InputInstance, Paragraph, Section } from "@/components/globals/Elements/typography";
+import {  Heading, Paragraph, Section } from "@/components/globals/Elements/typography";
+import {Button} from "@/components/globals/Elements/buttons";
+import  {InputInstance} from "@/components/globals/Elements/inputs";
 
-const inter = Inter({ subsets: ["latin"] });
+const Inter = Inter({ subsets: ["latin"] });
 
 export default function Newpassword() {
     return(
@@ -22,7 +24,7 @@ export default function Newpassword() {
            
             
              <Button type="submit" content={"Next"}/> <br/>
-            <button className="bg-slate-300 rounded-[var(--radius-full)] w-full h-10">Cancel</button>
+             <Button customClass={'bg-slate-300 rounded-[var(-radius-full)] w-full h-10'} content={'Cancel'}/>
             </Section>
             
 

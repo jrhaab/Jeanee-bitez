@@ -1,6 +1,7 @@
 import { MdLocalCafe } from "react-icons/md"; // Material Design icons
 import { Inter } from "next/font/google";
-import { Button, Heading, Paragraph, Section } from "@/components/globals/Elements/typography";
+import { Heading, Paragraph, Section } from "@/components/globals/Elements/typography";
+import {Button} from "@/components/globals/Elements/buttons";
 
 const inter = Inter({ subsets: ["latin"] });
 

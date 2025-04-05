@@ -1,7 +1,8 @@
 import { Inter } from "next/font/google";
-import { Button, Heading, InputInstance, Paragraph, Section } from "@/components/globals/Elements/typography";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Heading,  Paragraph, Section } from "@/components/globals/Elements/typography";
+import {Button} from "@/components/globals/Elements/buttons";
+import {InputInstance} from "@/components/globals/Elements/inputs";
+const Inter = Inter({ subsets: ["latin"] });
 
 export default function OTPcode() {
     return(
