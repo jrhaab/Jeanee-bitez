@@ -1,32 +1,39 @@
-import { Paragraph } from "@/components/globals/Elements/typography";
-import { Inter } from "next/font/google";
+import { LinkInstance } from "@/components/globals/Elements/links";
+import { MainInstance } from "@/components/globals/Elements/main";
+import { ParagraphInstance } from "@/components/globals/Elements/paragraph";
+import { SectionInstance } from "@/components/globals/Elements/section";
 import Image from "next/image";
-import Link from "next/link";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Landingpage() {
   return (
-    <main 
-      className={`bg-[url('/bg/pexels-yuuilina-10254480.jpg')] bg-no-repeat bg-cover bg-center flex flex-col justify-end items-end pb-0`}
+    <MainInstance
+      bg={"[url('/bg/pexels-yuuilina-10254480.jpg')]"}
+      customclassName={"pb-0 py-96"}
     >
-      <section className="w-full h-max rounded-t-[var(--radius-md)] bg-white opacity-95 flex flex-col items-center justify-center shadow-lg gap-y-16 px-10 py-10">
+      <SectionInstance
+        customclassName={
+          "rounded-t-[var(--radius-md)] items-end justify-end gap-y-16 px-10 py-9  "
+        }
+      >
         <Image
           src={"/trademarks/jeanee-transparent-logo_wz8kzv.png"}
           alt=""
           width={1024}
           height={1024}
-          className="w-1/2 h-auto place-self-center"
+          className="w-1/3 h-auto"
         />
         <div className="w-full h-max flex flex-col items-center justify-center  !gap-y-4 text-center">
-          <Paragraph content = {"The best diary ordering and delivery app of the century."}/>
-          <Link 
-          href={"/auth-choice"}
-          className="bg-[var(--secondary-red-color)] rounded-[var(--radius-full)] text-white text-2xl font-bold tracking-[0.05rem] flex flex-col items-center justify-center px-4 py-3 w-full">
-            Get started
-          </Link>
+          <ParagraphInstance
+            content={"The best diary ordering and delivery app of the century."}
+          />
+          <LinkInstance
+            href={"/auth-choice"}
+            text={"white font-semibold"}
+            label={"Get started"}
+            customclassName={"rounded-full"}
+          />
         </div>
-      </section>
-    </main>
+      </SectionInstance>
+    </MainInstance>
   );
 }
