@@ -20,17 +20,20 @@ export default function Login() {
         />
         <HeadingInstance type={"h3"} content={"Login to your account"} />
         <form action="fill-in" className="w-full flex flex-col  px-3 py-6">
-          <label for="email-address" className=" font-semibold">
+          <label for="email-address"  className=" font-semibold">
             Email:
           </label>
-          <InputInstance type={"text"} onChange={"someFunction"} />
+          <InputInstance type={"text"} onChange={"someFunction"}  />
 
-          <label for="email-address" className=" font-semibold ">
+          <label for="password" className=" font-semibold ">
             Password:
           </label>
-          <InputInstance type={"text"} onChange={"someFunction"} />
-
-          <span className=" font-semibold"> Remind me</span>
+          <InputInstance type={"password"} onChange={"someFunction"} />
+<div>
+  <input type="checkbox" id="remember" />
+<label for="remember" className=" font-semibold"> Remind me</label>
+</div>
+         
           <br />
           <ButtonInstance type="submit" content={"Login"} />
           <ParagraphInstance content={"By continuing, you agree to Jeanee’s condition of use and Privacy Notice"} />
