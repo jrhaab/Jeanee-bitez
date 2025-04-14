@@ -23,7 +23,7 @@ export default function Signup() {
         <form action="fill-in" className="w-full flex flex-col  px-3 py-6">
           <div>
             <label for="email-address" className=" font-semibold ">
-              Phone number:
+              Email or username:
             </label>
             <InputInstance
               type={"text"}
@@ -33,8 +33,28 @@ export default function Signup() {
           </div>
 
           <div>
+            <label for="phone number" className=" font-semibold">
+              Phone Number:
+            </label>
+            <InputInstance
+              type={"text"}
+              className={"${customClass} w-full "}
+              onChange={"someFunction"}
+            />
+          </div>
+          <div>
             <label for="password" className=" font-semibold">
               Password:
+            </label>
+            <InputInstance
+              type={"text"}
+              className={"${customClass} w-full "}
+              onChange={"someFunction"}
+            />
+          </div>
+          <div>
+            <label for="password" className=" font-semibold">
+              Confirm Password:
             </label>
             <InputInstance
               type={"text"}

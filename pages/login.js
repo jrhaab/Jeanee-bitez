@@ -33,6 +33,7 @@ export default function Login() {
           <span className=" font-semibold"> Remind me</span>
           <br />
           <ButtonInstance type="submit" content={"Login"} />
+          <ParagraphInstance content={"By continuing, you agree to Jeanee’s condition of use and Privacy Notice"} />
         </form>
         <LinkInstance
           href={"./passwordreset"}
