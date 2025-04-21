@@ -7,12 +7,12 @@ import Image from "next/image";
 export default function Landingpage() {
   return (
     <MainInstance
-      bg={"[url('/bg/pexels-yuuilina-10254480.jpg')]"}
-      customclassName={"pb-0 py-96"}
+      bg={"bg-[url('/bg/pexels-yuuilina-10254480.jpg')]"}
+      customclassName={"justify-end items-end "}
     >
       <SectionInstance
         customclassName={
-          "rounded-t-[var(--radius-md)] items-end justify-end gap-y-16 px-10 py-9  "
+          "rounded-t-[var(--radius-md)] items-end justify-end gap-y-16 px-10 py-9 h-max"
         }
       >
         <Image

@@ -10,7 +10,7 @@ import { SectionInstance } from "@/components/globals/Elements/section";
 export default function Login() {
   return (
     <MainInstance>
-      <SectionInstance>
+      <SectionInstance customclassName={"h-max"}>
         <Image
           src={"/trademarks/jeanee-transparent-logo_wz8kzv.png"}
           alt=""
@@ -19,7 +19,7 @@ export default function Login() {
           className="w-1/3 h-auto"
         />
         <HeadingInstance type={"h3"} content={"Login to your account"} />
-        <form action="fill-in" className="w-full flex flex-col  px-3 py-6">
+        <form action="fill-in" className="w-full flex flex-col  px-3 ">
           <label for="email-address"  className=" font-semibold">
             Email:
           </label>
@@ -39,7 +39,7 @@ export default function Login() {
           <ParagraphInstance content={"By continuing, you agree to Jeanee’s condition of use and Privacy Notice"} />
         </form>
         <LinkInstance
-          href={"./passwordreset"}
+          href={"/passwordreset"}
           text={"[var(--secondary-red-color)]"}
           label={"Forgot the password?"}
           bg={"white"}
@@ -47,10 +47,10 @@ export default function Login() {
         <ParagraphInstance content={"Don't have an account?"} />
 
         <LinkInstance
-          href={"./signup"}
+          href={"/signup"}
           text={"[var(--secondary-red-color)]"}
           label={"Sign up"}
-          bg={"white"}
+          bg={"transparent"}
         />
       </SectionInstance>
     </MainInstance>

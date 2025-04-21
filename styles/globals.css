@@ -223,7 +223,6 @@ main {
   align-items: center;
   align-self: center;
   justify-self: center;
-  padding: 1rem 0rem;
   overflow-y: auto;
 }
 
@@ -237,7 +236,6 @@ main {
     align-items: center;
     align-self: center;
     justify-self: center;
-    padding: 1rem 0rem;
     background-size: cover;
     overflow-y: auto;
   }

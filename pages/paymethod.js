@@ -1,34 +1,47 @@
-import {  Heading, Paragraph, Section } from "@/components/globals/Elements/typography";
-import {Button} from "@/components/globals/Elements/buttons";
-import { Inter } from "next/font/google";
+import { ButtonInstance } from "@/components/globals/Elements/buttons";
 import Image from "next/image";
-
-const inter = Inter({ subsets: ["latin"] });
+import { MainInstance } from "@/components/globals/Elements/main";
+import { HeadingInstance } from "@/components/globals/Elements/heading";
+import { SectionInstance } from "@/components/globals/Elements/section";
+import { ParagraphInstance } from "@/components/globals/Elements/paragraph";
 
 export default function Paymentmethod() {
-    return (
-        <main className={`bg-[url('/bg/jenee-auth-bg.png')] bg-no-repeat bg-cover bg-center flex flex-col  w-full gap-6 px-3 pb-0`} >
-             <Image src={"https://res.cloudinary.com/dfdy55ndo/image/upload/v1735923906/jeanee-transparent-logo_wz8kzv.png"} alt="" width={100} height={100} />
-             
-              <Heading type={"h3"} content={"Payment Method"}/> 
-              
-              <Paragraph content={"* This data will be displayed in your profile for security"} />
+  return (
+    <MainInstance>
+      <SectionInstance>
+        <Image
+          src={
+            "https://res.cloudinary.com/dfdy55ndo/image/upload/v1735923906/jeanee-transparent-logo_wz8kzv.png"
+          }
+          alt=""
+          width={100}
+          height={100}
+        />
 
-              <Section>
-              <div className="flex flex-col items-center justify-center w-full  py-10 ">
-                
-                <button className="bg-slate-50 items-center justify-center rounded-2xl h-12 w-full text-[var(--secondary-red-color)]  "> Telecel </button> <br />
-                <button className="bg-slate-50 items-center justify-center rounded-2xl h-12 w-full text-[var(--secondary-red-color)]  "> AirtelTigo </button> <br />
-                <button className="bg-slate-50 items-center justify-center rounded-2xl h-12 w-full  text-[var(--secondary-red-color)] "> MTN </button> <br />
-                </div>
-                <Button type="submit" content={"Next"}/>
-                </Section> 
-             
+        <HeadingInstance type={"h3"} content={"Payment Method"} />
 
-                
-
-               
-
-        </main>
-    )
+        <ParagraphInstance
+          content={"* This data will be displayed in your profile for security"}
+        />
+        <div className="flex flex-col items-center justify-center w-full  py-10 ">
+          <button className="bg-slate-50 items-center justify-center rounded-2xl h-12 w-full text-[var(--secondary-red-color)]  ">
+            {" "}
+            Telecel{" "}
+          </button>{" "}
+          <br />
+          <button className="bg-slate-50 items-center justify-center rounded-2xl h-12 w-full text-[var(--secondary-red-color)]  ">
+            {" "}
+            AirtelTigo{" "}
+          </button>{" "}
+          <br />
+          <button className="bg-slate-50 items-center justify-center rounded-2xl h-12 w-full  text-[var(--secondary-red-color)] ">
+            {" "}
+            MTN{" "}
+          </button>{" "}
+          <br />
+        </div>
+        <ButtonInstance type="submit" content={"Next"} />
+      </SectionInstance>
+    </MainInstance>
+  );
 }
