@@ -35,9 +35,10 @@ export default function Login() {
 </div>
          
           <br />
-          <ButtonInstance type="submit" content={"Login"} />
-          <ParagraphInstance content={"By continuing, you agree to Jeanee’s condition of use and Privacy Notice"} />
+         
         </form>
+        <ButtonInstance customClass={"w-2/3"} type="submit" content={"Login"} /> 
+        <ParagraphInstance content={"By continuing, you agree to Jeanee’s condition of use and Privacy Notice"} />
         <LinkInstance
           href={"/passwordreset"}
           text={"[var(--secondary-red-color)]"}

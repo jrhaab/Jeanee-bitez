@@ -6,11 +6,11 @@ import { SectionInstance } from "@/components/globals/Elements/section";
 import Image from "next/image";
 export default function Strawberryflavor() {
   return (
-    <MainInstance customclassName={"pb-0 py-96"} bg={"white"}>
+    <MainInstance customclassName={"justify-end items-end"}  >
         
         <SectionInstance
         customclassName={
-          "rounded-t-[var(--radius-md)] items-end justify-end gap-12  py-5"
+          "rounded-t-[var(--radius-md)] items-end justify-end gap-y-16 px-10 py-9 h-max"
         }
       >
         <Image
@@ -25,11 +25,11 @@ export default function Strawberryflavor() {
           <ParagraphInstance content={"Strawberry Flavor"} />
           <ParagraphInstance content={"GHC 10.00"} />
         </div>
-      
+      <ParagraphInstance content={"Details"}/>
 
         <div className="flex flex-row w-full gap-2">
           <InputInstance customclassName={"w-20 rounded-md"} />
-          <ButtonInstance customClass={" rounded-md"} />
+          <ButtonInstance customClass={" rounded-md "} content={"Add To Cart"}/>
         </div>
       </SectionInstance>
         

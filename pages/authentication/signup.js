@@ -62,19 +62,24 @@ export default function Signup() {
               onChange={"someFunction"}
             />
           </div>
-
+          <div > 
+          <input type="checkbox" id="remember"/>
           <span className="font-semibold "> Remind me</span>
-          <br />
-          <ButtonInstance type="submit" content={"Sign up"} />
-        </form>
+          </div>
 
+          
+          <br />
+         
+        </form>
+        <ButtonInstance customClass={" items-center justify-center w-2/3"} type="submit" content={"Sign up"} />
         <ParagraphInstance content={" Already have an account?"} />
 
         <LinkInstance
-          href={"./login"}
+        
+          href={"/login"}
           text={"[var(--secondary-red-color)]"}
           label={"Login"}
-          bg={"white"}
+          bg={"transparent"}
         />
       </SectionInstance>
     </MainInstance>

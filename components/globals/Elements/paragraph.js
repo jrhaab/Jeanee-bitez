@@ -1,6 +1,6 @@
-export const ParagraphInstance = ({content}) =>{
+export const ParagraphInstance = ({content, customclassName}) =>{
     return (
-        <>{<p className="font-medium text-base text-center w-full">{content}</p>}</>
+       <>{<p className={`font-medium text-base text-center w-full ${customclassName}`}>{content}</p>}</>
 
     );
 };

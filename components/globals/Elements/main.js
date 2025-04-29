@@ -1,4 +1,4 @@
-import { Children } from "react";
+
 
 export const MainInstance = ({ children,customclassName, bg}) => {
     return(

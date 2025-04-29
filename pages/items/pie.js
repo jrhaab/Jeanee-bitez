@@ -4,12 +4,14 @@ import { MainInstance } from "@/components/globals/Elements/main";
 import { ParagraphInstance } from "@/components/globals/Elements/paragraph";
 import { SectionInstance } from "@/components/globals/Elements/section";
 import Image from "next/image";
-
-export default function Vanillaflavour() {
+export default function Meatpie() {
   return (
-    <MainInstance customclassName={"pb-0 py-96"}>
-      <SectionInstance customclassName={"items-end justify-end gap-12 py-5 rounded-t-[var(--radius-md)]"}>
-
+    <MainInstance customclassName={"justify-end items-end"}>
+      <SectionInstance
+        customclassName={
+          "rounded-t-[var(--radius-md)] items-end justify-end gap-y-16 px-10 py-9 h-max"
+        }
+      >
         <Image
           src={"/trademarks/jeanee-transparent-logo_wz8kzv.png"}
           alt=""
@@ -18,13 +20,13 @@ export default function Vanillaflavour() {
           className="w-1/3 h-auto"
         />
         <div className="flex flex-row w-full">
-          <ParagraphInstance content={"Vanilla flavour"} />
-          <ParagraphInstance content={"GHC 10.00"} />
+          <ParagraphInstance content={"Meat Pie"} />
+          <ParagraphInstance content={"GHC 6.00"} />
         </div>
         <ParagraphInstance content={"Details"} />
-        <div className="flex flex-row w-full gap-2 px-3">
-          <InputInstance customclassName={"w-20 rounded-md"} />
-          <ButtonInstance customClass={"rounded-md"} content={"Add To Cart"} />
+        <div className="flex flex-row w-full">
+          <InputInstance customclassName={"rounded-md  "} />
+          <ButtonInstance customClass={"w-full rounded-md"} />
         </div>
       </SectionInstance>
     </MainInstance>

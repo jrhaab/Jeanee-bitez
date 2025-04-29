@@ -1,6 +1,7 @@
 import { ButtonInstance } from "@/components/globals/Elements/buttons";
 import { HeadingInstance } from "@/components/globals/Elements/heading";
 import { InputInstance } from "@/components/globals/Elements/inputs";
+import { LinkInstance } from "@/components/globals/Elements/links";
 import { MainInstance } from "@/components/globals/Elements/main";
 import { ParagraphInstance } from "@/components/globals/Elements/paragraph";
 import { SectionInstance } from "@/components/globals/Elements/section";
@@ -10,8 +11,8 @@ import { MdLocalCafe } from "react-icons/md"; // Material Design icons
 
 export default function Home() {
   return (
-    <MainInstance>
-      <SectionInstance customclassName={"py-5"}>
+    <MainInstance customclassName={"flex items-start justify-start"}>
+      <SectionInstance customclassName={" flex h-max items- center justify-center py-5 gap-y-12"}>
         <div className="flex flex-row justify-center items-center gap-10 w-full">
           <Image
             src={
@@ -53,65 +54,76 @@ export default function Home() {
           <ParagraphInstance content={"See All"} />
         </div>
 
-        <div className="flex flex-row items-center justify-center w-full gap-6 px-3">
-          <button className="w-40 h-20 flex flex-col items-center  bg-slate-100 rounded-md">
-            {" "}
+        <div className="flex flex-row items-center justify-center  gap-6 ">
+          <LinkInstance customclassName={"w-40 h-20 flex flex-col items-center  bg-slate-100 rounded-md"}>
+           
+            <MdLocalCafe className="text-brown-600 animate-bounce " />
+            
+            <div className=" flex flex-col items-start justify-start  ">
+              <ParagraphInstance content={"Strawberry"} />
+              <ParagraphInstance content={"10 cedis"} />
+            </div>
+          </LinkInstance>
+
+
+          <LinkInstance customclassName={"w-40 h-20 flex flex-col items-center  bg-slate-100 rounded-md"}>
             <MdLocalCafe className="text-brown-600 animate-bounce " />
             <div className=" flex flex-col items-start justify-start  ">
               <ParagraphInstance content={"Strawberry"} />
               <ParagraphInstance content={"10 cedis"} />
             </div>
-          </button>
+          </LinkInstance>
 
-          <button className="w-40 h-20 flex flex-col items-center  bg-slate-100 rounded-md">
-            <MdLocalCafe className="text-brown-600 animate-bounce " />
-            <div className=" flex flex-col items-start justify-start  ">
-              <ParagraphInstance content={"Strawberry"} />
-              <ParagraphInstance content={"10 cedis"} />
-            </div>{" "}
-          </button>
-
-          <button className="w-40 h-20 flex flex-col items-center  bg-slate-100 rounded-md">
+          <LinkInstance customclassName={"w-40 h-20 flex flex-col items-center  bg-slate-100 rounded-md"}>
             <MdLocalCafe className="text-brown-600 animate-bounce " />
             <div className=" flex flex-col items-start justify-start  ">
               <ParagraphInstance content={"Strawberry"} />
               <ParagraphInstance content={"10 cedis"} />
             </div>
-          </button>
+          </LinkInstance>
         </div>
+
 
         <div className="flex flex-row w-full">
           <ParagraphInstance content={"Recommended Pastries"} />
           <ParagraphInstance content={"See All"} />
         </div>
+
+
         <div className="flex flex-row items-center justify-center w-full gap-6 px-3">
-          <button className="w-40 h-20 flex flex-col items-center  bg-slate-100 rounded-md">
+          <LinkInstance customclassName={"w-40 h-20 flex flex-col items-center  bg-slate-100 rounded-md"}>
             <MdLocalCafe className="text-brown-600 animate-bounce " />
             <div className=" flex flex-col items-start justify-start  ">
               <ParagraphInstance content={"Strawberry"} />
               <ParagraphInstance content={"10 cedis"} />
             </div>
-          </button>
+          </LinkInstance>
 
-          <button className="w-40 h-20 flex flex-col items-center  bg-slate-100 rounded-md">
+          <LinkInstance customclassName={"w-40 h-20 flex flex-col items-center  bg-slate-100 rounded-md"}>
             <MdLocalCafe className="text-brown-600 animate-bounce " />
             <div className=" flex flex-col items-start justify-start">
               <ParagraphInstance content={"Strawberry"} />
               <ParagraphInstance content={"10 cedis"} />
             </div>
-          </button>
+          </LinkInstance>
 
-          <button className="w-40 h-20 flex flex-col items-center  bg-slate-100 rounded-md">
+          <LinkInstance customclassName={"w-40 h-20 flex flex-col items-center  bg-slate-100 rounded-md"}>
             <MdLocalCafe className="text-brown-600 animate-bounce " />
             <div className=" flex flex-col items-start justify-start">
               <ParagraphInstance content={"Strawberry"} />
               <ParagraphInstance content={"10 cedis"} />
             </div>
-          </button>
+          </LinkInstance>
         </div>
         <div className="flex flex-row w-full">
           <ParagraphInstance content={"Your Favorites"} />
           <ParagraphInstance content={"See All"} />
+        </div>
+        <div className="flex flex-row items-center justify-center w-full h-10 bg-slate-100 gap-20">
+        <MdLocalCafe className="text-brown-600 animate-bounce" />
+        <MdLocalCafe className="text-brown-600 animate-bounce" />
+        <MdLocalCafe className="text-brown-600 animate-bounce" />
+        <MdLocalCafe className="text-brown-600 animate-bounce" />
         </div>
       </SectionInstance>
     </MainInstance>
