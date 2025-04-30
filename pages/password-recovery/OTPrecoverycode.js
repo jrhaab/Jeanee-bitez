@@ -1,29 +1,33 @@
-import { Inter } from "next/font/google";
-import { Heading,  Paragraph, Section } from "@/components/globals/Elements/typography";
-import {Button} from "@/components/globals/Elements/buttons";
+
+import { ButtonInstance} from "@/components/globals/Elements/buttons";
 import {InputInstance} from "@/components/globals/Elements/inputs";
-const Inter = Inter({ subsets: ["latin"] });
+import { MainInstance } from "@/components/globals/Elements/main";
+import { HeadingInstance } from "@/components/globals/Elements/heading";
+import { ParagraphInstance } from "@/components/globals/Elements/paragraph";
+import { SectionInstance } from "@/components/globals/Elements/section";
+
 
 export default function OTPcode() {
     return(
-        <main  className={`bg-[url('/bg/jenee-auth-bg.png')] bg-no-repeat bg-cover bg-center flex flex-col w-full gap-12 px-3 py-10  pb-0`}> 
-            
-            <Heading type={"h3"} content={"Forgot password "}/>
-            <Paragraph content={"Enter 4-digits PIN code we sent to your number +233****001"}/> 
-            <Section> 
+        <MainInstance> 
+         
+            <SectionInstance> 
+                   
+            <HeadingInstance type={"h3"} content={"Forgot password "}/>
+            <ParagraphInstance content={"Enter 4-digits PIN code we sent to your number +233****001"}/> 
             <div className="h-max w-full flex flex-row items-center justify-center gap-6 ">
-            <InputInstance type={"text"} className={'${customClass} w-full'} onChange={"someFunction"}/>
-            <InputInstance type={"text"}className={'${customClass }w-full'} onChange={"someFunction"}/> 
-            <InputInstance type={"text"} className={'${customClass} w-full'} onChange={"someFunction"} /> 
-            <InputInstance type={"text"} className={'${customClass} w-full'} onChange={"someFunction"} /> 
+            <InputInstance type={"text"}  onChange={"someFunction"}/>
+            <InputInstance type={"text"} onChange={"someFunction"}/> 
+            <InputInstance type={"text"}  onChange={"someFunction"} /> 
+            <InputInstance type={"text"}  onChange={"someFunction"} /> 
             </div>
-            <Paragraph content={"Resend code in 56 s"}/>
-            <Button type="submit" content={"Submit"}/> 
-            </Section>
+            <ParagraphInstance content={"Resend code in 56 s"}/>
+            <ButtonInstance type="submit" content={"Submit"}/> 
+            </SectionInstance>
 
             
        
-        </main>
+        </MainInstance>
     )
 
 }
