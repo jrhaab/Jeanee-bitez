@@ -1,6 +1,9 @@
-export const SectionInstance = ({children, onClick, customclassName}) => {
-    return(
-        <section onClick={onClick} className={`w-full h-full flex flex-col items-center justify-start gap-3 bg-white opacity-90 py-14 ${customclassName}`} > {children}
-        </section>
-    )
-}
+export const SectionInstance = ({ children, customclassName }) => {
+  return (
+    <section
+      className={`w-full h-full flex flex-col justify-start items-center gap-3 bg-white py-4 ${customclassName}`}
+    >
+      {children}
+    </section>
+  );
+};
